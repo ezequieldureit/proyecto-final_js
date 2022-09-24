@@ -1,0 +1,143 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu&display=swap");
+
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  font-family: "Ubuntu", sans-serif;
+}
+
+#left_side {
+  width: 50%;
+  height: 100%;
+  overflow: hidden;
+  float: left;
+  background: rgb(255, 255, 255) url(img/img1.jpg) no-repeat;
+  background-size: cover;
+}
+
+#right_side {
+  width: 50%;
+  height: 100%;
+  margin: 0;
+  float: left;
+  background: #96be25;
+  display: flex;
+  justify-content: center;
+}
+
+#right_side form {
+  height: 100%;
+  width: 55%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#right_side h2 {
+  font-size: 2em;
+  color: #063970;
+  margin: 20px 0;
+  font-weight: bold;
+}
+
+#right_side form > input {
+  width: 100%;
+  padding: 10px 0;
+  font-size: 1em;
+}
+
+#right_side form > img {
+  width: 250px;
+}
+
+#right_side label {
+  width: 100%;
+  font-size: 18px;
+  font-weight: 700;
+  margin: 20px 0;
+}
+
+.check {
+  width: 100%;
+  margin: 20px 0;
+}
+
+#right_side input[type="button"] {
+  width: 100%;
+  background-color: #063970;
+  color: #fff;
+  border: none;
+  font-size: 18px;
+  padding: 8px 30px;
+  font-family: "Ubuntu", sans-serif;
+}
+
+.container-class {
+  display: flex;
+  background-color: rgba(240, 248, 255, 0.486);
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  pointer-events: none;
+  opacity: 0;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+
+}
+.show {
+  pointer-events: auto;
+  opacity: 1;
+
+}
+
+
+
+#plan {
+  background-color: #fff;
+  width: 500px;
+  max-width: 100%;
+  padding: 30px 50px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+
+
+button {
+  background-color: #063970;
+  border: 0;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  color: white;
+  font-size: 12px;
+  padding: 10px 25px;
+}
+
+
+
+@media only screen and (max-width: 768px) {
+  #left_side {
+    display: none;
+  }
+
+  #right_side {
+    width: 100%;
+  }
+
+  #right_side form {
+    width: 95%;
+    padding: 0 1em;
+  }
+}

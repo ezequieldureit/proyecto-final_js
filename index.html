@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Planes alimenticios on line</title>
+  </head>
+  <body>
+    <section id="left_side"></section>
+    <section id="right_side">
+      <form id="form">
+        <img src="./img/Logo3.png" alt="Logo" />
+
+        <label>Nombre</label>
+        <input type="text" name="nombre" id="nombre"/>
+
+        <label>Edad</label>
+        <input type="number" name="edad" id="edad" value=""/>
+
+        <label>Peso</label>
+        <input type="number" name="peso" id="peso" value=""/>
+
+        <div class="check">
+          <p>
+            <input type="checkbox" name="condiciones" id="terminos"/>
+            Aceptar términos y condiciones
+          </p>
+        </div>
+
+        <input type="button"  id="solicitar" value="Solicitar plan" />
+      </form>
+
+      <div id="container_id" class="container-class">
+        <div id="plan">
+          <div id="resultado">
+          </div>
+          
+          <button id="cerrar">Cerrar</button>
+        </div>
+      </div>
+    </section>
+    <script src="./app.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+  </body>
+</html>
